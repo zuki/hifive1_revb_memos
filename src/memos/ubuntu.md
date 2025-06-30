@@ -1,4 +1,4 @@
-# hifive1-revbでNuttx
+# ubuntu20.04
 
 [ドキュメント: hifive1-revb](https://nuttx.apache.org/docs/latest/platforms/risc-v/fe310/boards/hifive1-revb/index.html)に基づく
 
@@ -94,7 +94,7 @@ $ vi libs/libc/stdlib/lib_strtold.c
 
 $ make
 
-CPP:  /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-revb/scripts/ld.script-> /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-LD: nuttx                   
+CPP:  /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-revb/scripts/ld.script-> /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-LD: nuttx
 Memory region         Used Size  Region Size  %age Used
            flash:       77976 B         4 MB      1.86%
             sram:        4256 B        16 KB     25.98%
@@ -105,7 +105,6 @@ $ qemu-system-riscv32 -nographic -machine sifive_e -kernel ./nuttx
 
 暴走
 ```
-
 
 ## 実機（ubuntuで作業）
 
@@ -120,7 +119,7 @@ Register: hello
 Register: nsh
 Register: sh
 Register: getprime
-CPP:  /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-revb/scripts/ld.script-> /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-LD: nuttx                   
+CPP:  /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-revb/scripts/ld.script-> /home/vagrant/nuttx/nuttx/boards/risc-v/fe310/hifive1-LD: nuttx
 Memory region         Used Size  Region Size  %age Used
            flash:       77976 B         4 MB      1.86%
             sram:        4256 B        16 KB     25.98%
@@ -144,9 +143,9 @@ OK
 
 Current Version: NuttX  0.0.0 9f84695ef7 Jun 23 2025 09:05:14 risc-v
 Assertion failed panic: at file: :0 task: Idle_Task process: Kernel 0x20010bbc  // <nx_start>の先頭アドレス : stack over flow
-EPC: 20011162                                                                                 
-A0: 80000b00 A1: 00000000 A2: 200200b8 A3: 00000000                                           
-A4: 00000007 A5: 00000007 A6: 00000005 A7: 00000000                                           
+EPC: 20011162
+A0: 80000b00 A1: 00000000 A2: 200200b8 A3: 00000000
+A4: 00000007 A5: 00000007 A6: 00000005 A7: 00000000
 T0: 800007c0 T1: 20010e3e T2: 800005d0 T3: 80000170
 T4: 00000000 T5: 00000000 T6: 00000000
 S0: 80001000 S1: 800007f0 S2: 80001000 S3: 00000000
@@ -191,7 +190,7 @@ $ minicom
 
 Welcome to minicom 2.8
 
-OPTIONS: 
+OPTIONS:
 Compiled on Jan  4 2021, 00:04:46.
 Port /dev/cu.usbmodem0009790170491, 09:23:39
 Using character set conversion
@@ -204,10 +203,10 @@ ATE0-->ATE0
 OK
 AT+BLEINIT=0-->OK
 AT+CWMODE=0-->OK
-                                                                        
-                                                                        
-                                                                        
-                  SIFIVE, INC.                                          
+
+
+
+                  SIFIVE, INC.
 
            5555555555555555555555555
           5555                   5555
