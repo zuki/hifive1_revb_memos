@@ -11,5 +11,7 @@
     - [第8章 Zephyr RTOS](getting_started/chap8.md)
     - [第9章 補注](getting_started/chap9.md)
     - [第10章 さらなる情報](getting_started/chap10.md)
+- [SiFive E31 Core Complexマニュアル r1p2](e31_core_manual/README.md)
+  - [第6章 割り込み](e31_core_manual/chap6.md)
 - [PlatformIOで開発](platformio.md)
 - [Freedom E SDKの導入](freedom_e_sdk.md)
